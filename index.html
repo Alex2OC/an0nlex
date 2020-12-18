@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<title>an0nlex</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://alexopriesnig.de/Onepage/glitch.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0};
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+
+
+div{
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+
+div:before,
+div:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+div:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+div:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
+
+</style>
+
+</head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>an0nlex</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>WHO AM I</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>impressons</p>
+  </a>
+
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">an0nlex</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">WHO AM I</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">impressons</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">get in touch</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo">
+    
+<p>
+<div title=an0nlex>an0nlex</div>
+</p>
+
+    <p>Photographer, UI Designer, Tweaker & Cheater</p>
+    <img src="/Onepage/imgs/head.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+  
+  <center>
+    <h2 class="w3-text-light-grey">an0nlex</h2>
+    <hr style="width:200px" class="w3-opacity">
+    
+
+
+    <p><i class="fa fa-instagram w3-hover-opacity"></i> @Alex2OC</p>
+    <p><i class="fa fa-twitter w3-hover-opacity"></i> @Alex2OC</p>
+    <p><i class="fa fa-telegram w3-hover-opacity"></i>@Alex2OC</p>
+</p></center>
+
+    <h3 class="w3-padding-16 w3-text-light-grey">Wallets</h3>
+    <p class="w3-wide">BTC: bc1qkdu86ujunns3zk55lflwywk4gyhc25x0fn99rp</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">ETH: 0xBEd51B65522277a76587b074eD7646663B938A77</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">CRO: 0xBEd51B65522277a76587b074eD7646663B938A77</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+    
+
+
+
+    </div>
+    
+ 
+   
+
+
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="/Onepage/imgs/img1.jpg" style="width:100%">
+        <img src="/Onepage/imgs/img2.jpg" style="width:100%">
+        <img src="/Onepage/imgs/img3.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="/Onepage/imgs/akk1.jpg" style="width:100%">
+        <img src="/Onepage/imgs/akk2.png" style="width:100%">
+        <img src="/Onepage/imgs/akk3.jpg" style="width:100%">
+        <img src="/Onepage/imgs/head.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+<center>
+<span class="w3-large w3-margin-right">_an0nlex</span>    
+<br>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-youtube w3-hover-opacity"></i>
+    <i class="fa fa-soundcloud w3-hover-opacity"></i>
+    <i class="fa fa-telegram w3-hover-opacity"></i>
+</p>
+
+</center>
+
+
+
+
+
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
